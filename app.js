@@ -1,5 +1,5 @@
 const path = require('path');
-var compression = require('compression');
+const compression = require('compression');
 const express = require('express');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
