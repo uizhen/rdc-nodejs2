@@ -1,0 +1,57 @@
+.nav {
+  position: absolute;
+  width: 50px;
+  background: #1a1e5d;
+  right: 60%;
+  top: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 450;
+}
+.span_color:hover {
+  transition-duration: 0.4s;
+  color: #fec931;
+}
+
+.span_color {
+  background: #1a1e5d;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+}
+
+.span_color::after {
+  float: left;
+  right: 10%;
+}
+
+.slide {
+  height: 0px;
+  overflow: hidden;
+  list-style-type: none;
+  transition: height 0.4s ease;
+  z-index: 2;
+}
+
+ul .slide {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.language_text {
+  color: aliceblue;
+}
+.language_text:hover {
+  transition-duration: 0.4s;
+  color: #fec931;
+}
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 10px;
+}
+
+#touch:checked + .slide {
+  height: 125px;
+}
