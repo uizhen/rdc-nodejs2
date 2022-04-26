@@ -12,12 +12,12 @@ app.set('views', 'views');
 
 app.use(compression());
 app.use(helmet());
-const shopRoutes = require('./routes/shop');
+const Routes = require('./routes/index');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(shopRoutes);
+app.use(Routes);
 
 app.use(errorController.get404);
 

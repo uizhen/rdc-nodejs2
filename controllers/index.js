@@ -1,7 +1,5 @@
-
-
 exports.getIndex = (req, res, next) => {
-  res.render('shop/index', {
+  res.render('index/index', {
     path: '/',
     pageTitle: ''
   });
@@ -10,26 +8,26 @@ exports.getIndex = (req, res, next) => {
 
 
 exports.getContact = (req, res, next) => {
-  res.render('shop/contact', {
+  res.render('index/contact', {
     path: '/contact.html',
     pageTitle: 'Холбогдох'
   });
 };
 
 exports.getAbout = (req, res, next) => {
-  res.render('shop/about', {
+  res.render('index/about', {
     path: '/about.html',
     pageTitle: 'Checkout'
   });
 };
 exports.getBlog = (req, res, next) => {
-  res.render('shop/blog', {
+  res.render('index/blog', {
     path: '/blog.html',
     pageTitle: 'Checkout'
   });
 };
 exports.getService = (req, res, next) => {
-  res.render('shop/service', {
+  res.render('index/service', {
     path: '/service.html',
     pageTitle: 'Service'
   });
